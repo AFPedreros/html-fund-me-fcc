@@ -3,9 +3,26 @@
     <head>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <title>Fund Me App</title>
+        <script type="module" src="index.js"></script>
     </head>
     <body>
-        <button id="connect-btn">Connect</button>
-        <script type="module" src="main.js"></script>
+        <main>
+            <h1>Fund Me App</h1>
+            <div class="container">
+                <div class="fund">
+                    <label for="fund">ETH amount</label>
+                    <input id="ethAmount" type="text" placeholder="0.1 ETH" />
+                    <button id="fund-btn">Fund</button>
+                </div>
+                <div class="balance">
+                    <label id="balance-amount" for="balance"
+                        >Check the balance</label
+                    >
+                    <button id="balance-btn">Get Balance</button>
+                </div>
+            </div>
+            <button id="connect-btn">Connect</button>
+            <button id="withdraw-btn">Withdraw</button>
+        </main>
     </body>
 </html>
